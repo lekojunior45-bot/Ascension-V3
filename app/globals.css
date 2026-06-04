@@ -106,23 +106,24 @@ input[type=range]{accent-color:var(--pu);}
 .alert-ok{background:rgba(2,44,34,.2);border:1px solid rgba(5,150,105,.2);border-radius:var(--r-s);padding:9px 12px;font-size:.7rem;color:#6EE7B7;line-height:1.6;}
 
 /* ═══════════════ MOBILE RESPONSIVE ═══════════════ */
-@media (max-width: 768px) {
-  html,body { overflow:auto; height:auto; }
-  .app { flex-direction:column; height:auto; min-height:100vh; }
-  .sb { width:100%!important;min-width:100%!important;height:auto;flex-direction:row;padding:8px 12px;border-right:none;border-bottom:1px solid var(--bdr);position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:4px; }
-  .sb-logo { padding-bottom:0;border-bottom:none;margin-bottom:0;flex:1; }
-  .logo-sub,.nav-sec,.nav-sep,.sb-sig,.sb-ft { display:none!important; }
-  .ni { padding:6px 10px;font-size:.72rem;flex-shrink:0; }
-  .main-scroll { overflow:visible; }
-  .pg { padding:16px; }
-  .g2,.g3,.g4 { grid-template-columns:1fr; }
-  .g4 { grid-template-columns:1fr 1fr; }
-  .tabs { overflow-x:auto;flex-wrap:nowrap; }
-  .tab { flex-shrink:0;font-size:.65rem;padding:6px 10px; }
-  .mc-v { font-size:1.4rem; }
-  .chat-w { height:300px; }
-  .bub { max-width:90%; }
-  .card { padding:14px; }
+@media(max-width:768px){
+  html,body{overflow:auto;height:auto;}
+  .app{flex-direction:column;height:auto;min-height:100vh;}
+  .sb{width:100%!important;min-width:100%!important;height:auto;flex-direction:row;padding:8px 12px;border-right:none;border-bottom:1px solid rgba(255,255,255,.06);position:sticky;top:0;z-index:100;flex-wrap:wrap;gap:4px;background:#0A0A1C;}
+  .sb-logo-sub,.nav-sep,.nav-sec,.sb-footer{display:none!important;}
+  .ni{padding:6px 10px;font-size:.68rem;flex-shrink:0;}
+  .main-scroll{overflow:visible;}
+  .pg{padding:14px 12px;}
+  .g2{grid-template-columns:1fr;}
+  .g3{grid-template-columns:repeat(3,1fr);gap:8px;}
+  .g4{grid-template-columns:repeat(2,1fr);gap:8px;}
+  .gal-grid{grid-template-columns:1fr 1fr;}
+  .mc-v{font-size:1.3rem;}
+  .mc{padding:10px 6px;}
+  .mc-l{font-size:.5rem;}
+  .chat-w{height:260px;}
+  .bub{max-width:90%;}
+  .card{padding:14px 12px;}
 }
 
 /* PWA safe area */
