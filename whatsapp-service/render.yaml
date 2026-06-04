@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ascension-whatsapp
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: WHATSAPP_SERVICE_SECRET
+        sync: false
+    disk:
+      name: wwebjs-auth
+      mountPath: /opt/render/project/src/.wwebjs_auth
+      sizeGB: 1
